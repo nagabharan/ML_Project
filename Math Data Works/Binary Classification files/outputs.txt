@@ -1,0 +1,142 @@
+> B1=fit(pass∼.,math[,c(inputs,bout)],model="rpart") # fit a decision tree
+> print(B1@object)
+n= 395 
+
+node), split, n, loss, yval, (yprob)
+      * denotes terminal node
+
+ 1) root 395 130 pass (0.3291139 0.6708861)  
+   2) failures>=0.5 83  31 fail (0.6265060 0.3734940)  
+     4) failures>=1.5 33   7 fail (0.7878788 0.2121212) *
+     5) failures< 1.5 50  24 fail (0.5200000 0.4800000)  
+      10) age>=16.5 37  14 fail (0.6216216 0.3783784)  
+        20) guardian=father,mother 26   6 fail (0.7692308 0.2307692) *
+        21) guardian=other 11   3 pass (0.2727273 0.7272727) *
+      11) age< 16.5 13   3 pass (0.2307692 0.7692308) *
+   3) failures< 0.5 312  78 pass (0.2500000 0.7500000)  
+     6) schoolsup=yes 40  18 pass (0.4500000 0.5500000)  
+      12) studytime>=1.5 31  14 fail (0.5483871 0.4516129)  
+        24) reason=course 11   2 fail (0.8181818 0.1818182) *
+        25) reason=home,other,reputation 20   8 pass (0.4000000 0.6000000)  
+          50) Fedu< 2.5 7   2 fail (0.7142857 0.2857143) *
+          51) Fedu>=2.5 13   3 pass (0.2307692 0.7692308) *
+      13) studytime< 1.5 9   1 pass (0.1111111 0.8888889) *
+     7) schoolsup=no 272  60 pass (0.2205882 0.7794118)  
+      14) guardian=other 10   4 fail (0.6000000 0.4000000) *
+      15) guardian=father,mother 262  54 pass (0.2061069 0.7938931) *
+	  
+	  
+> B2=fit(pass∼.,math[,c(inputs,bout)],model="ctree") # fit a conditional
+> inference tree
+Error: unexpected symbol in "inference tree"
+> print(B1@object)
+n= 395 
+
+node), split, n, loss, yval, (yprob)
+      * denotes terminal node
+
+ 1) root 395 130 pass (0.3291139 0.6708861)  
+   2) failures>=0.5 83  31 fail (0.6265060 0.3734940)  
+     4) failures>=1.5 33   7 fail (0.7878788 0.2121212) *
+     5) failures< 1.5 50  24 fail (0.5200000 0.4800000)  
+      10) age>=16.5 37  14 fail (0.6216216 0.3783784)  
+        20) guardian=father,mother 26   6 fail (0.7692308 0.2307692) *
+        21) guardian=other 11   3 pass (0.2727273 0.7272727) *
+      11) age< 16.5 13   3 pass (0.2307692 0.7692308) *
+   3) failures< 0.5 312  78 pass (0.2500000 0.7500000)  
+     6) schoolsup=yes 40  18 pass (0.4500000 0.5500000)  
+      12) studytime>=1.5 31  14 fail (0.5483871 0.4516129)  
+        24) reason=course 11   2 fail (0.8181818 0.1818182) *
+        25) reason=home,other,reputation 20   8 pass (0.4000000 0.6000000)  
+          50) Fedu< 2.5 7   2 fail (0.7142857 0.2857143) *
+          51) Fedu>=2.5 13   3 pass (0.2307692 0.7692308) *
+      13) studytime< 1.5 9   1 pass (0.1111111 0.8888889) *
+     7) schoolsup=no 272  60 pass (0.2205882 0.7794118)  
+      14) guardian=other 10   4 fail (0.6000000 0.4000000) *
+      15) guardian=father,mother 262  54 pass (0.2061069 0.7938931) *
+	  
+	  
+
+
+
+> B3=fit(pass∼.,math[,c(inputs,bout)],model="mlpe") # fit a multilayer perceptron ensemble
+> print(B3@object)
+$mlp
+$mlp[[1]]
+a 37-10-1 network with 391 weights
+inputs: sexM age addressU famsizeLE3 PstatusT Medu Fedu Mjobhealth Mjobother Mjobservices Mjobteacher Fjobhealth Fjobother Fjobservices Fjobteacher reasonhome reasonother reasonreputation guardianmother guardianother traveltime studytime failures schoolsupyes famsupyes paidyes activitiesyes nurseryyes higheryes internetyes romanticyes famrel freetime goout Dalc Walc health 
+output(s): pass 
+options were - entropy fitting 
+
+$mlp[[2]]
+a 37-10-1 network with 391 weights
+inputs: sexM age addressU famsizeLE3 PstatusT Medu Fedu Mjobhealth Mjobother Mjobservices Mjobteacher Fjobhealth Fjobother Fjobservices Fjobteacher reasonhome reasonother reasonreputation guardianmother guardianother traveltime studytime failures schoolsupyes famsupyes paidyes activitiesyes nurseryyes higheryes internetyes romanticyes famrel freetime goout Dalc Walc health 
+output(s): pass 
+options were - entropy fitting 
+
+$mlp[[3]]
+a 37-10-1 network with 391 weights
+inputs: sexM age addressU famsizeLE3 PstatusT Medu Fedu Mjobhealth Mjobother Mjobservices Mjobteacher Fjobhealth Fjobother Fjobservices Fjobteacher reasonhome reasonother reasonreputation guardianmother guardianother traveltime studytime failures schoolsupyes famsupyes paidyes activitiesyes nurseryyes higheryes internetyes romanticyes famrel freetime goout Dalc Walc health 
+output(s): pass 
+options were - entropy fitting 
+
+
+$cx
+ [1]  0.0000000 16.6962025  0.0000000  0.0000000  0.0000000  2.7493671  2.5215190  0.0000000  0.0000000
+[10]  0.0000000  0.0000000  1.4481013  2.0354430  0.3341772  0.0000000  0.0000000  0.0000000  0.0000000
+[19]  0.0000000  0.0000000  0.0000000  0.0000000  3.9443038  3.2354430  3.1088608  1.4810127  2.2911392
+[28]  3.5544304  0.0000000
+
+$sx
+ [1] 0.0000000 1.2760427 0.0000000 0.0000000 0.0000000 1.0947351 1.0882005 0.0000000 0.0000000 0.0000000
+[11] 0.0000000 0.6975048 0.8392403 0.7436510 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000
+[21] 0.0000000 0.0000000 0.8966586 0.9988620 1.1132782 0.8907414 1.2878966 1.3903034 0.0000000
+
+$cy
+[1] 0
+
+$sy
+[1] 0
+
+$nr
+[1] 3
+
+
+
+
+
+
+> B4=fit(pass∼.,math[,c(inputs,bout)],model="ksvm") # fit a support vector
+> machine
+Error: object 'machine' not found
+> print(B4@object)
+Support Vector Machine object of class "ksvm" 
+
+SV type: C-svc  (classification) 
+ parameter : cost C = 1 
+
+Gaussian Radial Basis kernel function. 
+ Hyperparameter : sigma =  0.0359721935127951 
+
+Number of Support Vectors : 294 
+
+Objective Function Value : -207.0355 
+Training error : 0.217722 
+Probability model included. 
+
+
+
+
+> B5=loadmodel("mlpe-pass.model") # load from file
+> print(class(B5@object$mlp[[1]]))
+[1] "nnet.formula" "nnet"  
+
+
+
+
+
+	  
+
+	  
+
+	  

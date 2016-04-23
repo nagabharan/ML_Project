@@ -1,0 +1,18 @@
+> showres(C1,cmath,"five")
+bagging > time elapsed: 26.26 , Global Accuracy: 73.67 
+Acc. per class 94.68 91.9 91.14 86.08 83.54 
+
+
+
+> # boosting example:
+> C2=fit(five∼.,cmath,model="boosting") # boosting from adabag package
+> showres(C2,cmath,"five")
+boosting > time elapsed: 25.05 , Global Accuracy: 71.9 
+Acc. per class 93.92 90.89 90.63 85.06 83.29 
+
+
+> # randomForest example:
+> C3=fit(five∼.,cmath,model="randomForest") # from randomForest package
+> showres(C3,cmath,"five")
+randomForest.formula randomForest > time elapsed: 1.05 , Global Accuracy: 100 
+Acc. per class 100 100 100 100 100 

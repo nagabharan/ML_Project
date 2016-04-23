@@ -1,0 +1,25 @@
+output class: integer
+[1] "holdout:"
+2/3 split of data 
+Length Class Mode
+tr 263 -none- numeric
+itr 0 -none- NULL
+val 0 -none- NULL
+ts 132 -none- numeric
+
+
+
+RF, holdout: MAE=3.48, R2=0.05
+
+
+[1] "10-fold:"
+RF, 10-fold: MAE=3.78, R2=-0.14
+
+
+Note:
+
+This example clearly exemplifies the need for measuring predictive performance on test data.
+As shown in the obtained scatter plots (Figure 3.2), the quality of the predictions is not good.
+In effect, a large number of points are far from the diagonal line (in gray), which denotes the
+perfect forecast. Also, the R2 values are close to zero and thus far away from the ideal model
+(R2=1.0).
