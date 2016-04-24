@@ -1,0 +1,98 @@
+DT Acc:rpart > time elapsed: 0.03 , Global Accuracy: 89.21 
+Acc. per class: 89.21 89.21 
+Confusion Mat:      pred
+target fail pass
+  fail   43   57
+  pass   13  536
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      89.2       10.8       29.7       49.5        0.5       89.2       89.2       43.0       97.6       97.6       43.0       76.8 
+PRECISION2        F11        F12       MCC1       MCC2 
+      90.4       55.1       93.9        0.6        0.6 
+
+Conditional Inference Tree Acc:BinaryTree > time elapsed: 0.04 , Global Accuracy: 84.59 
+Acc. per class: 84.59 84.59 
+Confusion Mat:      pred
+target fail pass
+  fail    0  100
+  pass    0  549
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      84.6       15.4       50.0        0.0        0.0       84.6       84.6        0.0      100.0      100.0        0.0        0.0 
+PRECISION2        F11        F12       MCC1       MCC2 
+      84.6        0.0       91.7        0.0        0.0 
+
+Multiple Perceptron ensemble Acc:list > time elapsed: 0.92 , Global Accuracy: 99.69 
+Acc. per class: 99.69 99.69 
+Confusion Mat:      pred
+target fail pass
+  fail  100    0
+  pass    2  547
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      99.7        0.3        0.2       98.8        1.0       99.7       99.7      100.0       99.6       99.6      100.0       98.0 
+PRECISION2        F11        F12       MCC1       MCC2 
+     100.0       99.0       99.8        1.0        1.0 
+
+SVM Acc:ksvm > time elapsed: 0.07 , Global Accuracy: 87.83 
+Acc. per class: 87.83 87.83 
+Confusion Mat:      pred
+target fail pass
+  fail   24   76
+  pass    3  546
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      87.8       12.2       38.3       33.4        0.4       87.8       87.8       24.0       99.5       99.5       24.0       88.9 
+PRECISION2        F11        F12       MCC1       MCC2 
+      87.8       37.8       93.3        0.4        0.4 
+
+Naive Bayes Acc:factor > time elapsed: 0 , Global Accuracy: 84.59 
+Acc. per class: 84.59 84.59 
+Confusion Mat:      pred
+target fail pass
+  fail    0  100
+  pass    0  549
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      84.6       15.4       50.0        0.0        0.0       84.6       84.6        0.0      100.0      100.0        0.0        0.0 
+PRECISION2        F11        F12       MCC1       MCC2 
+      84.6        0.0       91.7        0.0        0.0 
+
+kNN Acc:list > time elapsed: 0 , Global Accuracy: 93.99 
+Acc. per class: 93.99 93.99 
+Confusion Mat:      pred
+target fail pass
+  fail   62   38
+  pass    1  548
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      94.0        6.0       19.1       72.8        0.7       94.0       94.0       62.0       99.8       99.8       62.0       98.4 
+PRECISION2        F11        F12       MCC1       MCC2 
+      93.5       76.1       96.6        0.8        0.8 
+
+Bagging Acc:bagging > time elapsed: 19.28 , Global Accuracy: 91.37 
+Acc. per class: 91.37 91.37 
+Confusion Mat:      pred
+target fail pass
+  fail   53   47
+  pass    9  540
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      91.4        8.6       24.3       60.8        0.6       91.4       91.4       53.0       98.4       98.4       53.0       85.5 
+PRECISION2        F11        F12       MCC1       MCC2 
+      92.0       65.4       95.1        0.6        0.6 
+
+Boosting Acc:boosting > time elapsed: 20.3 , Global Accuracy: 99.85 
+Acc. per class: 99.85 99.85 
+Confusion Mat:      pred
+target fail pass
+  fail  100    0
+  pass    1  548
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      99.8        0.2        0.1       99.4        1.0       99.8       99.8      100.0       99.8       99.8      100.0       99.0 
+PRECISION2        F11        F12       MCC1       MCC2 
+     100.0       99.5       99.9        1.0        1.0 
+
+RF Acc:randomForest.formula randomForest > time elapsed: 0.82 , Global Accuracy: 99.85 
+Acc. per class: 99.85 99.85 
+Confusion Mat:      pred
+target fail pass
+  fail   99    1
+  pass    0  549
+All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2       TNR1       TNR2 PRECISION1 
+      99.8        0.2        0.5       99.4        1.0       99.8       99.8       99.0      100.0      100.0       99.0      100.0 
+PRECISION2        F11        F12       MCC1       MCC2 
+      99.8       99.5       99.9        1.0        1.0 
