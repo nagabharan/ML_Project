@@ -1,98 +1,136 @@
-DT Acc:rpart > time elapsed: 0.06 , Global Accuracy: 78.48 
+DT Acc:rpart > time elapsed: 0.04 , Global Accuracy: 78.48 
 Acc. per class: 78.48 78.48 
-Confusion Mat:      pred
-target fail pass
-  fail   66   64
-  pass   21  244
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-      78.5       21.5       28.6       46.8        0.5       78.5       78.5       50.8       92.1 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-      92.1       50.8       75.9       79.2       60.8       85.2        0.6        0.6 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE     0  130
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+       78.5        21.5        28.6        46.8         0.5        78.5        78.5        50.8        92.1 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+       92.1        50.8        75.9        79.2        60.8        85.2         0.6         0.6         0.2 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.2         0.2         0.7         0.7         0.7         0.7         1.0         0.6         0.6 
+ALIFTATPERC 
+        1.0 
 
-Conditional Inference Tree Acc:BinaryTree > time elapsed: 0.06 , Global Accuracy: 72.41 
+Conditional Inference Tree Acc:BinaryTree > time elapsed: 0.04 , Global Accuracy: 72.41 
 Acc. per class: 72.41 72.41 
-Confusion Mat:      pred
-target fail pass
-  fail   52   78
-  pass   31  234
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-      72.4       27.6       35.8       31.2        0.3       72.4       72.4       40.0       88.3 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-      88.3       40.0       62.7       75.0       48.8       81.1        0.5        0.5 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE     0  130
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+       72.4        27.6        35.8        31.2         0.3        72.4        72.4        40.0        88.3 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+       88.3        40.0        62.7        75.0        48.8        81.1         0.5         0.5         0.2 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.2         0.2         0.7         0.7         0.7         0.7         1.0         0.6         0.6 
+ALIFTATPERC 
+        1.0 
 
-Multiple Perceptron ensemble Acc:list > time elapsed: 0.69 , Global Accuracy: 100 
+Multiple Perceptron ensemble Acc:list > time elapsed: 0.78 , Global Accuracy: 100 
 Acc. per class: 100 100 
-Confusion Mat:      pred
-target fail pass
-  fail  130    0
-  pass    0  265
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-       100          0          0        100          1        100        100        100        100 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-       100        100        100        100        100        100          1          1 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE   118   12
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+      100.0         0.0         0.0       100.0         1.0       100.0       100.0       100.0       100.0 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+      100.0       100.0       100.0       100.0       100.0       100.0         1.0         1.0         0.0 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.0         0.0         1.0         1.0         1.0         1.0         1.0         0.7         0.7 
+ALIFTATPERC 
+        1.0 
 
-SVM Acc:ksvm > time elapsed: 0.07 , Global Accuracy: 78.23 
-Acc. per class: 78.23 78.23 
-Confusion Mat:      pred
-target fail pass
-  fail   49   81
-  pass    5  260
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-      78.2       21.8       32.1       42.1        0.5       78.2       78.2       37.7       98.1 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-      98.1       37.7       90.7       76.2       53.3       85.8        0.5        0.5 
+SVM Acc:ksvm > time elapsed: 0.14 , Global Accuracy: 77.97 
+Acc. per class: 77.97 77.97 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE     0  130
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+       78.0        22.0        31.7        42.3         0.5        78.0        78.0        40.0        96.6 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+       96.6        40.0        85.2        76.6        54.5        85.5         0.5         0.5         0.2 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.2         0.2         0.9         0.9         0.9         0.9         1.0         0.6         0.6 
+ALIFTATPERC 
+        1.0 
 
 Naive Bayes Acc:factor > time elapsed: 0 , Global Accuracy: 67.09 
 Acc. per class: 67.09 67.09 
-Confusion Mat:      pred
-target fail pass
-  fail    0  130
-  pass    0  265
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-      67.1       32.9       50.0        0.0        0.0       67.1       67.1        0.0      100.0 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-     100.0        0.0        0.0       67.1        0.0       80.3        0.0        0.0 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE     0  130
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+       67.1        32.9        50.0         0.0         0.0        67.1        67.1         0.0       100.0 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+      100.0         0.0         0.0        67.1         0.0        80.3         0.0         0.0         0.3 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.3         0.3         0.5         0.5         0.5         0.5         1.0         0.5         0.5 
+ALIFTATPERC 
+        1.0 
 
 kNN Acc:list > time elapsed: 0 , Global Accuracy: 92.41 
 Acc. per class: 92.41 92.41 
-Confusion Mat:      pred
-target fail pass
-  fail  105   25
-  pass    5  260
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-      92.4        7.6       10.6       82.1        0.8       92.4       92.4       80.8       98.1 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-      98.1       80.8       95.5       91.2       87.5       94.5        0.8        0.8 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE     7  123
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+       92.4         7.6        10.6        82.1         0.8        92.4        92.4        80.8        98.1 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+       98.1        80.8        95.5        91.2        87.5        94.5         0.8         0.8         0.1 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.1         0.1         1.0         1.0         1.0         1.0         1.0         0.7         0.7 
+ALIFTATPERC 
+        1.0 
 
-Bagging Acc:bagging > time elapsed: 26.91 , Global Accuracy: 82.78 
-Acc. per class: 82.78 82.78 
-Confusion Mat:      pred
-target fail pass
-  fail   71   59
-  pass    9  256
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-      82.8       17.2       24.4       56.8        0.6       82.8       82.8       54.6       96.6 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-      96.6       54.6       88.8       81.3       67.6       88.3        0.6        0.6 
+Bagging Acc:bagging > time elapsed: 24.65 , Global Accuracy: 81.77 
+Acc. per class: 81.77 81.77 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE    10  120
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+       81.8        18.2        25.1        54.6         0.6        81.8        81.8        54.6        95.1 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+       95.1        54.6        84.5        81.0        66.4        87.5         0.6         0.6         0.1 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.1         0.1         0.9         0.9         0.9         0.9         1.0         0.6         0.6 
+ALIFTATPERC 
+        1.0 
 
-Boosting Acc:boosting > time elapsed: 25.12 , Global Accuracy: 100 
+Boosting Acc:boosting > time elapsed: 25.15 , Global Accuracy: 100 
 Acc. per class: 100 100 
-Confusion Mat:      pred
-target fail pass
-  fail  130    0
-  pass    0  265
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-       100          0          0        100          1        100        100        100        100 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-       100        100        100        100        100        100          1          1 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE     0  130
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+      100.0         0.0         0.0       100.0         1.0       100.0       100.0       100.0       100.0 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+      100.0       100.0       100.0       100.0       100.0       100.0         1.0         1.0         0.1 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.1         0.1         1.0         1.0         1.0         1.0         1.0         0.7         0.7 
+ALIFTATPERC 
+        1.0 
 
-RF Acc:randomForest.formula randomForest > time elapsed: 0.67 , Global Accuracy: 100 
+RF Acc:randomForest.formula randomForest > time elapsed: 0.68 , Global Accuracy: 100 
 Acc. per class: 100 100 
-Confusion Mat:      pred
-target fail pass
-  fail  130    0
-  pass    0  265
-All Metrics:       ACC         CE        BER      KAPPA    CRAMERV   ACCLASS1   ACCLASS2       TPR1       TPR2 
-       100          0          0        100          1        100        100        100        100 
-      TNR1       TNR2 PRECISION1 PRECISION2        F11        F12       MCC1       MCC2 
-       100        100        100        100        100        100          1          1 
+Confusion Mat:       pred
+target  FALSE TRUE
+  FALSE     1  129
+  TRUE      0  265
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2        TPR1        TPR2 
+      100.0         0.0         0.0       100.0         1.0       100.0       100.0       100.0       100.0 
+       TNR1        TNR2  PRECISION1  PRECISION2         F11         F12        MCC1        MCC2       BRIER 
+      100.0       100.0       100.0       100.0       100.0       100.0         1.0         1.0         0.0 
+BRIERCLASS1 BRIERCLASS2         AUC   AUCCLASS1   AUCCLASS2        NAUC    TPRATFPR       ALIFT      NALIFT 
+        0.0         0.0         1.0         1.0         1.0         1.0         1.0         0.7         0.7 
+ALIFTATPERC 
+        1.0 
+null device 
+          1 
