@@ -18,68 +18,74 @@ cpor=por[,c(inputs,bout)] # for easy typing, new data.frame
 cat("output class:",class(cpor$pass),"\n")
 
 # results function:
-showres=function(M,data,output)
+showres=function(M,data,output,cn)
 {
     output=which(names(data)==output)
     Y=data[,output] # target values
     P=predict(M,data) # prediction values
-    acc=round(mmetric(Y,P,metric="ACC"),2) # get accuracy
+    acc=round(mmetric(Y,P,metric="ACC",TC=2,D=0.5),2) # get accuracy
     cat(class(M@object),"> time elapsed:",M@time,", Global Accuracy:",acc,"\n"
     )
     cat("Acc. per class:",round(mmetric(Y,P,metric="ACCLASS"),2),"\n")
-    m=mmetric(Y,P,metric=c("CONF")) # a)
+    m=mmetric(Y,P,metric=c("CONF"),TC=2,D=0.1) # a)
     cat("Confusion Mat:")
     print(m$conf) # confusion matrix
     cat("All Metrics:")
     m=mmetric(Y,P,metric=c("ALL"))
     print(round(m,1)) # all pure class metrics
+    
+    txt=paste(cn,"AUC:",round(mmetric(Y,P,metric="AUC",TC=2),2))
+    mgraph(Y,P,graph="ROC",baseline=TRUE,Grid=10,main=txt,TC=-1)
 }
 
+pdf("graphs/por-binary-roc.pdf")
+par(mfrow=c(1,1))
 sink("Por-Binary-Output.txt")
-B1=fit(pass~.,por[,c(inputs,bout)],model="rpart",task="class") # fit a decision tree
+B1=fit(pass~.,por[,c(inputs,bout)],model="rpart",task="prob") # fit a decision tree
 # print(B1@object)
 cat("DT Acc:")
-showres(B1,cpor,"pass")
+showres(B1,cpor,"pass","DT")
 
-B2=fit(pass~.,por[,c(inputs,bout)],model="ctree",task="class") # fit a conditional inference tree
+B2=fit(pass~.,por[,c(inputs,bout)],model="ctree",task="prob") # fit a conditional inference tree
 # print(B2@object)
 cat("\nConditional Inference Tree Acc:")
-showres(B2,cpor,"pass")
+showres(B2,cpor,"pass","CITree")
 
-B3=fit(pass~.,por[,c(inputs,bout)],model="mlpe",task="class") # fit a multilayer perceptron ensemble
+B3=fit(pass~.,por[,c(inputs,bout)],model="mlpe",task="prob") # fit a multilayer perceptron ensemble
 # print(B3@object)
 cat("\nMultiple Perceptron ensemble Acc:")
-showres(B3,cpor,"pass")
+showres(B3,cpor,"pass","MLPE")
 
-B4=fit(pass~.,por[,c(inputs,bout)],model="ksvm",task="class") # fit a support vector machine
+B4=fit(pass~.,por[,c(inputs,bout)],model="ksvm",task="prob") # fit a support vector machine
 # print(B4@object)
 cat("\nSVM Acc:")
-showres(B4,cpor,"pass")
+showres(B4,cpor,"pass","SVM")
 
-B5=fit(pass~.,por[,c(inputs,bout)],model="naive",task="class") # fit a naive bayes
+B5=fit(pass~.,por[,c(inputs,bout)],model="naive",task="prob") # fit a naive bayes
 # print(B5@object)
 cat("\nNaive Bayes Acc:")
-showres(B5,cpor,"pass")
+showres(B5,cpor,"pass","NB")
 
-B6=fit(pass~.,por[,c(inputs,bout)],model="knn",task="class") # fit a knn
+B6=fit(pass~.,por[,c(inputs,bout)],model="knn",task="prob") # fit a knn
 # print(B6@object)
 cat("\nkNN Acc:")
-showres(B6,cpor,"pass")
+showres(B6,cpor,"pass","KNN")
 
-B7=fit(pass~.,por[,c(inputs,bout)],model="bagging",task="class") # fit bagging
+B7=fit(pass~.,por[,c(inputs,bout)],model="bagging",task="prob") # fit bagging
 # print(B7@object)
 cat("\nBagging Acc:")
-showres(B7,cpor,"pass")
+showres(B7,cpor,"pass","Bagging")
         
-B8=fit(pass~.,por[,c(inputs,bout)],model="boosting",task="class") # fit boosting
+B8=fit(pass~.,por[,c(inputs,bout)],model="boosting",task="prob") # fit boosting
 # print(B8@object)
 cat("\nBoosting Acc:")
-showres(B8,cpor,"pass")
+showres(B8,cpor,"pass","Boosting")
 
-B9=fit(pass~.,por[,c(inputs,bout)],model="randomForest",task="class") # fit a random forest
+B9=fit(pass~.,por[,c(inputs,bout)],model="randomForest",task="prob") # fit a random forest
 # print(B9@object)
 cat("\nRF Acc:")
-showres(B9,cpor,"pass")
+showres(B9,cpor,"pass","RF")
+dev.off()
 sink()
 
 # plot DT to file:

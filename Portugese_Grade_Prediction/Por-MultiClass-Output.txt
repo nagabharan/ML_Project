@@ -1,4 +1,4 @@
-DT Acc:rpart > time elapsed: 0.03 , Global Accuracy: 43.91 
+DT Acc:rpart > time elapsed: 0.05 , Global Accuracy: 43.91 
 Acc. per class: 87.37 73.5 70.42 69.65 86.9 
 Confusion Mat:      pred
 target   A   B   C   D   F
@@ -7,18 +7,16 @@ target   A   B   C   D   F
      C   0  38  72  39   5
      D   0  20  39 107  35
      F   0   9  13  22  56
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       43.9        56.1        59.9        26.9         0.3        87.4        73.5        70.4        69.6 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       86.9         0.0        44.6        46.8        53.2        56.0       100.0        79.5        77.8 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-       77.0        92.5         0.0        31.2        39.6        51.0        57.7         0.0        36.8 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-       42.9        52.1        56.9         0.0         0.4         0.5         0.5         0.6         0.1 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.1         0.1         0.2         0.2         0.1         0.7         0.7         0.7         0.7 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        0.7         0.8         0.8         1.0         0.7         0.7         1.0 
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       43.9        56.1        59.9        26.9         0.3        87.4        73.5        70.4        69.6        86.9         0.0 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+       44.6        46.8        53.2        56.0       100.0        79.5        77.8        77.0        92.5         0.0        31.2 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+       39.6        51.0        57.7         0.0        36.8        42.9        52.1        56.9         0.0         0.4         0.5 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        0.5         0.6         0.1         0.1         0.1         0.2         0.2         0.1         0.7         0.7         0.7 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        0.7         0.7         0.8         0.8         1.0         0.7         0.7         1.0 
 
 Conditional Inference Tree Acc:BinaryTree > time elapsed: 0.06 , Global Accuracy: 35.44 
 Acc. per class: 87.37 82.74 53.31 62.1 85.36 
@@ -29,62 +27,56 @@ target   A   B   C   D   F
      C   0   0  87  64   3
      D   0   0  66 121  14
      F   0   0  18  60  22
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       35.4        64.6        72.3        12.2         0.3        87.4        82.7        53.3        62.1 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       85.4         0.0         0.0        56.5        60.2        22.0       100.0       100.0        52.3 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-       62.9        96.9         0.0         0.0        26.9        42.2        56.4         0.0         0.0 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-       36.5        49.6        31.7         0.0         0.0         0.4         0.5         0.4         0.2 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.1         0.1         0.2         0.2         0.1         0.7         0.7         0.7         0.6 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        0.6         0.8         0.8         1.0         0.7         0.7         1.0 
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       35.4        64.6        72.3        12.2         0.3        87.4        82.7        53.3        62.1        85.4         0.0 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+        0.0        56.5        60.2        22.0       100.0       100.0        52.3        62.9        96.9         0.0         0.0 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+       26.9        42.2        56.4         0.0         0.0        36.5        49.6        31.7         0.0         0.0         0.4 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        0.5         0.4         0.2         0.1         0.1         0.2         0.2         0.1         0.7         0.7         0.7 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        0.6         0.6         0.8         0.8         1.0         0.7         0.7         1.0 
 
-Multiple Perceptron ensemble Acc:list > time elapsed: 1.14 , Global Accuracy: 90.45 
-Acc. per class: 96.46 94.92 95.07 95.84 98.61 
+Multiple Perceptron ensemble Acc:list > time elapsed: 1.11 , Global Accuracy: 91.22 
+Acc. per class: 97.38 96.92 95.69 94.45 98 
 Confusion Mat:      pred
 target   A   B   C   D   F
-     A  67  10   5   0   0
-     B   6  96   7   2   1
-     C   1   4 140   9   0
-     D   0   3   6 191   1
-     F   1   0   0   6  93
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       90.4         9.6        10.7        87.7         0.9        96.5        94.9        95.1        95.8 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       98.6        81.7        85.7        90.9        95.0        93.0        98.6        96.8        96.4 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-       96.2        99.6        89.3        85.0        88.6        91.8        97.9        85.4        85.3 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-       89.7        93.4        95.4         0.8         0.8         0.9         0.9         0.9         0.0 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.0         0.1         0.1         0.0         0.0         1.0         1.0         1.0         1.0 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        1.0         1.0         1.0         1.0         0.9         0.9         1.0 
+     A  68   5   4   5   0
+     B   3 100   4   3   2
+     C   0   1 143  10   0
+     D   0   0   9 189   3
+     F   0   2   0   6  92
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       91.2         8.8         9.8        88.7         0.9        97.4        96.9        95.7        94.5        98.0        82.9 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+       89.3        92.9        94.0        92.0        99.5        98.5        96.6        94.6        99.1        95.8        92.6 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+       89.4        88.7        94.8        88.9        90.9        91.1        91.3        93.4         0.9         0.9         0.9 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        0.9         0.9         0.0         0.0         0.0         0.0         0.1         0.0         1.0         1.0         1.0 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        1.0         1.0         1.0         1.0         1.0         0.9         0.9         1.0 
 
-SVM Acc:ksvm > time elapsed: 0.5 , Global Accuracy: 53 
-Acc. per class: 89.98 81.05 71.49 74.42 89.06 
+SVM Acc:ksvm > time elapsed: 0.5 , Global Accuracy: 49.77 
+Acc. per class: 87.52 77.04 70.11 74.88 89.98 
 Confusion Mat:      pred
 target   A   B   C   D   F
-     A  20  27  27   8   0
-     B   1  56  42  12   1
-     C   0  27  96  31   0
-     D   0   8  51 137   5
-     F   2   5   7  51  35
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       53.0        47.0        52.0        38.0         0.5        90.0        81.0        71.5        74.4 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       89.1        24.4        50.0        62.3        68.2        35.0        99.5        87.5        74.3 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-       77.2        98.9        87.0        45.5        43.0        57.3        85.4        38.1        47.7 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-       50.9        62.3        49.6         0.4         0.5         0.5         0.6         0.5         0.1 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.1         0.1         0.2         0.2         0.1         0.8         0.9         0.8         0.8 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        0.8         0.9         0.9         1.0         0.8         0.8         1.0 
+     A   1  46  27   8   0
+     B   0  51  48  12   1
+     C   0  27  93  34   0
+     D   0   8  51 134   8
+     F   0   7   7  42  44
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       49.8        50.2        56.4        33.7         0.4        87.5        77.0        70.1        74.9        90.0         1.2 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+       45.5        60.4        66.7        44.0       100.0        83.6        73.1        78.6        98.4       100.0        36.7 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+       41.2        58.3        83.0         2.4        40.6        48.9        62.2        57.5         0.1         0.4         0.5 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        0.6         0.6         0.1         0.1         0.1         0.2         0.2         0.1         0.8         0.9         0.8 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        0.8         0.8         0.9         0.9         1.0         0.8         0.8         1.0 
 
 Naive Bayes Acc:factor > time elapsed: 0 , Global Accuracy: 30.97 
 Acc. per class: 87.37 82.74 76.27 30.97 84.59 
@@ -95,18 +87,16 @@ target   A   B   C   D   F
      C   0   0   0 154   0
      D   0   0   0 201   0
      F   0   0   0 100   0
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       31.0        69.0        80.0         0.0         0.0        87.4        82.7        76.3        31.0 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       84.6         0.0         0.0         0.0       100.0         0.0       100.0       100.0       100.0 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-        0.0       100.0         0.0         0.0         0.0        31.0         0.0         0.0         0.0 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-        0.0        47.3         0.0         0.0         0.0         0.0         0.0         0.0         0.3 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.1         0.2         0.2         0.7         0.2         0.5         0.5         0.5         0.5 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        0.5         0.5         0.5         1.0         0.3         0.3         1.0 
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       31.0        69.0        80.0         0.0         0.0        87.4        82.7        76.3        31.0        84.6         0.0 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+        0.0         0.0       100.0         0.0       100.0       100.0       100.0         0.0       100.0         0.0         0.0 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+        0.0        31.0         0.0         0.0         0.0         0.0        47.3         0.0         0.0         0.0         0.0 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        0.0         0.0         0.3         0.1         0.2         0.2         0.7         0.2         0.5         0.5         0.5 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        0.5         0.5         0.5         0.5         1.0         0.3         0.3         1.0 
 
 kNN Acc:list > time elapsed: 0 , Global Accuracy: 91.06 
 Acc. per class: 97.38 96.3 95.07 95.07 98.31 
@@ -117,64 +107,58 @@ target   A   B   C   D   F
      C   2   2 138  12   0
      D   1   2   7 188   3
      F   0   1   1   4  94
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       91.1         8.9         9.3        88.5         0.9        97.4        96.3        95.1        95.1 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       98.3        89.0        87.5        89.6        93.5        94.0        98.6        98.1        96.8 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-       95.8        99.1        90.1        90.7        89.6        90.8        94.9        89.6        89.1 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-       89.6        92.2        94.5         0.9         0.9         0.9         0.9         0.9         0.1 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.0         0.1         0.1         0.1         0.0         1.0         1.0         1.0         1.0 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        1.0         1.0         1.0         1.0         0.9         0.9         1.0 
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       91.1         8.9         9.3        88.5         0.9        97.4        96.3        95.1        95.1        98.3        89.0 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+       87.5        89.6        93.5        94.0        98.6        98.1        96.8        95.8        99.1        90.1        90.7 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+       89.6        90.8        94.9        89.6        89.1        89.6        92.2        94.5         0.9         0.9         0.9 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        0.9         0.9         0.1         0.0         0.1         0.1         0.1         0.0         1.0         1.0         1.0 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        1.0         1.0         1.0         1.0         1.0         0.9         0.9         1.0 
 
-Bagging Acc:bagging > time elapsed: 19.92 , Global Accuracy: 61.33 
-Acc. per class: 90.76 87.52 80.59 75.65 88.14 
+Bagging Acc:bagging > time elapsed: 20.25 , Global Accuracy: 61.48 
+Acc. per class: 90.45 87.67 79.82 76.12 88.91 
 Confusion Mat:      pred
 target   A   B   C   D   F
-     A  31  14  22  15   0
-     B   3  60  22  26   1
-     C   1   8 115  26   4
-     D   3   4  30 142  22
-     F   2   3  13  32  50
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       61.3        38.7        42.7        49.2         0.5        90.8        87.5        80.6        75.7 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       88.1        37.8        53.6        74.7        70.6        50.0        98.4        94.6        82.4 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-       77.9        95.1        77.5        67.4        56.9        58.9        64.9        50.8        59.7 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-       64.6        64.3        56.5         0.5         0.6         0.6         0.6         0.6         0.1 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.1         0.1         0.1         0.2         0.1         0.9         0.9         0.9         0.9 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        0.8         0.9         0.9         1.0         0.9         0.9         1.0 
+     A  29  13  26  14   0
+     B   5  57  24  25   1
+     C   1   5 117  29   2
+     D   3   4  29 146  19
+     F   0   3  15  32  50
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       61.5        38.5        43.0        49.3         0.5        90.4        87.7        79.8        76.1        88.9        35.4 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+       50.9        76.0        72.6        50.0        98.4        95.3        81.0        77.7        96.0        76.3        69.5 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+       55.5        59.3        69.4        48.3        58.8        64.1        65.3        58.1         0.5         0.6         0.6 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        0.6         0.6         0.1         0.1         0.1         0.1         0.1         0.1         0.9         0.9         0.9 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        0.9         0.8         0.9         0.9         1.0         0.9         0.9         1.0 
 
-Boosting Acc:boosting > time elapsed: 20.86 , Global Accuracy: 61.63 
-Acc. per class: 91.53 88.14 80.74 74.73 88.14 
+Boosting Acc:boosting > time elapsed: 21.36 , Global Accuracy: 61.63 
+Acc. per class: 90.76 87.98 80.74 75.65 88.14 
 Confusion Mat:      pred
 target   A   B   C   D   F
-     A  37   9  20  16   0
-     B   4  56  24  27   1
-     C   0   6 112  33   3
-     D   3   4  26 146  22
-     F   3   2  13  33  49
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       61.6        38.4        42.1        49.5         0.5        91.5        88.1        80.7        74.7 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       88.1        45.1        50.0        72.7        72.6        49.0        98.2        96.1        83.2 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-       75.7        95.3        78.7        72.7        57.4        57.3        65.3        57.4        59.3 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-       64.2        64.0        56.0         0.6         0.6         0.6         0.6         0.6         0.1 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.1         0.1         0.1         0.1         0.1         0.9         0.9         0.9         0.9 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        0.8         0.9         0.9         1.0         0.9         0.9         1.0 
+     A  33  10  24  15   0
+     B   4  59  24  24   1
+     C   2   6 114  29   3
+     D   2   6  26 145  22
+     F   3   3  11  34  49
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       61.6        38.4        42.4        49.6         0.5        90.8        88.0        80.7        75.7        88.1        40.2 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+       52.7        74.0        72.1        49.0        98.1        95.3        82.8        77.2        95.3        75.0        70.2 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+       57.3        58.7        65.3        52.4        60.2        64.6        64.7        56.0         0.5         0.6         0.6 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        0.6         0.6         0.1         0.1         0.1         0.1         0.2         0.1         0.9         0.9         0.9 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        0.9         0.8         0.9         0.9         1.0         0.9         0.9         1.0 
 
-RF Acc:randomForest.formula randomForest > time elapsed: 1.34 , Global Accuracy: 99.85 
+RF Acc:randomForest.formula randomForest > time elapsed: 1.46 , Global Accuracy: 99.85 
 Acc. per class: 100 99.85 100 100 99.85 
 Confusion Mat:      pred
 target   A   B   C   D   F
@@ -183,15 +167,13 @@ target   A   B   C   D   F
      C   0   0 154   0   0
      D   0   0   0 201   0
      F   0   1   0   0  99
-All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4 
-       99.8         0.2         0.2        99.8         1.0       100.0        99.8       100.0       100.0 
-   ACCLASS5        TPR1        TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3 
-       99.8       100.0       100.0       100.0       100.0        99.0       100.0        99.8       100.0 
-       TNR4        TNR5  PRECISION1  PRECISION2  PRECISION3  PRECISION4  PRECISION5         F11         F12 
-      100.0       100.0       100.0        99.1       100.0       100.0       100.0       100.0        99.6 
-        F13         F14         F15        MCC1        MCC2        MCC3        MCC4        MCC5       BRIER 
-      100.0       100.0        99.5         1.0         1.0         1.0         1.0         1.0         0.0 
-BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2   AUCCLASS3 
-        0.0         0.0         0.0         0.0         0.0         1.0         1.0         1.0         1.0 
-  AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
-        1.0         1.0         1.0         1.0         0.9         0.9         1.0 
+All Metrics:        ACC          CE         BER       KAPPA     CRAMERV    ACCLASS1    ACCLASS2    ACCLASS3    ACCLASS4    ACCLASS5        TPR1 
+       99.8         0.2         0.2        99.8         1.0       100.0        99.8       100.0       100.0        99.8       100.0 
+       TPR2        TPR3        TPR4        TPR5        TNR1        TNR2        TNR3        TNR4        TNR5  PRECISION1  PRECISION2 
+      100.0       100.0       100.0        99.0       100.0        99.8       100.0       100.0       100.0       100.0        99.1 
+ PRECISION3  PRECISION4  PRECISION5         F11         F12         F13         F14         F15        MCC1        MCC2        MCC3 
+      100.0       100.0       100.0       100.0        99.6       100.0       100.0        99.5         1.0         1.0         1.0 
+       MCC4        MCC5       BRIER BRIERCLASS1 BRIERCLASS2 BRIERCLASS3 BRIERCLASS4 BRIERCLASS5         AUC   AUCCLASS1   AUCCLASS2 
+        1.0         1.0         0.0         0.0         0.0         0.0         0.0         0.0         1.0         1.0         1.0 
+  AUCCLASS3   AUCCLASS4   AUCCLASS5        NAUC    TPRATFPR       ALIFT      NALIFT ALIFTATPERC 
+        1.0         1.0         1.0         1.0         1.0         0.9         0.9         1.0 
